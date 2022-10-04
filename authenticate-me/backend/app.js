@@ -37,3 +37,12 @@ app.use(
     },
   })
 );
+
+// Routes from Phase 0:
+const routes = require("./routes");
+
+// ...
+
+app.use(routes); // Connect all the routes
+
+module.exports = app;
