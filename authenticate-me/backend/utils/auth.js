@@ -8,6 +8,7 @@ const { secret, expiresIn } = jwtConfig;
 // Sends a JWT Cookie
 const setTokenCookie = (res, user) => {
   // Create the token.
+
   const token = jwt.sign(
     { data: user.toSafeObject() },
     secret,
